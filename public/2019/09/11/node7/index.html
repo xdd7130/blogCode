@@ -1,17 +1,18 @@
 
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="UTF-8">
     <title>MySQL | DD_XIE的学习笔记</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="">
-    <meta name="description" content="准备mysql安装navicate数据库管理工具:https://blog.csdn.net/a599174211/article/details/82795658
-nodeJS默认不支持MySQL,需要第三方工具来驱动，这里用mysql驱动。
+    <meta name="description" content="准备mysql安装参考：https://www.cnblogs.com/laumians-notes/p/9069498.html
+Navicat数据库管理工具:https://blog.csdn.net/a599174211/article/details/82795658
+nodeJS操作MySQLnodeJS默认不支持MySQL,需要第三方工具来驱动，这里用mysql驱动。
 
 npm install mysql
 
-123456789101112131415const mysql = require(&#39;mysql&#39;);1.连接//createConnection(哪台服务器，用户名，密码，库)var db = mysql.createConnection(host:&#39;localhost&#39;,port:&#39;3306&#39;,user:&#39;root&#39;,password...">
+123456789101112131415const mysql = require(&#39;mysql&#39;);1.连接//createConnection(哪台服务器，用户名，密码，库)var db = mys...">
     
         <link rel="icon" href="/favicon.ico">
     
@@ -37,7 +38,7 @@ npm install mysql
     <div id="nav">
         <div class="nav-img" id="nav-img"></div>
         <div class="sentences">
-            云里写诗，泥里生活，岁月里洒脱。
+            时光荏苒，旦夕之间，略有遗憾，似白驹过隙，蹉跎自悟。
         </div>
     </div>
 </header>
@@ -56,8 +57,9 @@ npm install mysql
             
             <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node/">Node</a></li></ul>
         </div>
-        <h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>mysql安装<br>navicate数据库管理工具:<a href="https://blog.csdn.net/a599174211/article/details/82795658" target="_blank" rel="noopener">https://blog.csdn.net/a599174211/article/details/82795658</a></p>
-<p>nodeJS默认不支持MySQL,需要第三方工具来驱动，这里用mysql驱动。</p>
+        <h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><h4 id="mysql安装"><a href="#mysql安装" class="headerlink" title="mysql安装"></a>mysql安装</h4><p>参考：<a href="https://www.cnblogs.com/laumians-notes/p/9069498.html" target="_blank" rel="noopener">https://www.cnblogs.com/laumians-notes/p/9069498.html</a></p>
+<p>Navicat数据库管理工具:<a href="https://blog.csdn.net/a599174211/article/details/82795658" target="_blank" rel="noopener">https://blog.csdn.net/a599174211/article/details/82795658</a></p>
+<h3 id="nodeJS操作MySQL"><a href="#nodeJS操作MySQL" class="headerlink" title="nodeJS操作MySQL"></a>nodeJS操作MySQL</h3><p>nodeJS默认不支持MySQL,需要第三方工具来驱动，这里用mysql驱动。</p>
 <ul>
 <li>npm install mysql</li>
 </ul>
@@ -89,7 +91,7 @@ npm install mysql
     <div id="toc">
         
             <h2>文章目录</h2>
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL标准写法："><span class="toc-number">2.</span> <span class="toc-text">SQL标准写法：</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#mysql安装"><span class="toc-number">1.1.</span> <span class="toc-text">mysql安装</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nodeJS操作MySQL"><span class="toc-number">2.</span> <span class="toc-text">nodeJS操作MySQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL标准写法："><span class="toc-number">3.</span> <span class="toc-text">SQL标准写法：</span></a></li></ol>
         
     </div>
 </div>
@@ -97,15 +99,15 @@ npm install mysql
     </div>
 </div>
 <footer id="footer">
-     <div id="copyright">&copy; 解丹丹  2019</div>
+     <div id="copyright">&copy; I&#39;m xiedandan  2019</div>
      
              <!-- 不蒜子统计 -->
              <span id="busuanzi_container_site_pv">
-                     本站总访问量<span id="busuanzi_value_site_pv" style="color:#17a167"></span>次
+                     本站总访问量<span id="busuanzi_value_site_pv" style='color:#17a167'></span>次
              </span>
              <span class="post-meta-divider">|</span>
              <span id="busuanzi_container_site_uv">
-                     本站访客数<span id="busuanzi_value_site_uv" style="color:#17a167"></span>人
+                     本站访客数<span id="busuanzi_value_site_uv"  style='color:#17a167'></span>人
              </span>
              <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
        

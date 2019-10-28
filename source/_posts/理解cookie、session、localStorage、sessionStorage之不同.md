@@ -24,3 +24,14 @@ tags: [cookie]
     <font color="red">操作方法：</font>Cookie的修改读取方法需自己实现，sessionStorage，localStorage提供了get，set方法。    
 
 注：cookie是不可以或缺的，cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。
+
+
+# web Storage支持的属性与方法
+localStorage和sessionStorage都具有相同的操作方法，例如setItem、getItem和removeItem等
+
+getItem(key):获取指定key所存储的value值
+key(index)方法：返回列表中对应索引的key值
+length属性：返回key/value队列的长度
+removeItem(key)方法：从Storage中删除一个对应的键值对。
+setItem(key,value)方法：将value存储到key指定的字段。
+clear()方法：移除所有的内容
