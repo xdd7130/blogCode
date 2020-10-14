@@ -32,7 +32,7 @@
     <div id="nav">
         <div class="nav-img" id="nav-img"></div>
         <div class="sentences">
-            时光荏苒，旦夕之间，略有遗憾，似白驹过隙，蹉跎自悟。
+            云里写诗，泥里生活，岁月里洒脱。
         </div>
     </div>
 </header>
@@ -42,6 +42,147 @@
         <div class="clearfix">
     
     <div id="recent-posts">
+        
+            <div class="post-item">
+                <h1>
+                    <a href="/2019/08/05/ArcGIS-API-for-JS07/">
+                        ArcGIS Server之发布网络分析服务
+                    </a>
+                </h1>
+                <div class="create">
+                    <span>创建于</span>
+                    
+                        <time datetime="2019-08-05T09:30:10.000Z">
+                            2019-08-05
+                        </time>
+                    
+                    <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/ArcGIS/">ArcGIS</a></li></ul>
+                </div>
+                
+                    <p> ArcGIS中网络分析分为 : 最短路径分析，服务区信息等等,如果想要在Web应用程序中使用网络分析服务，需要将我们的数据发布为网络分析服务</p>
+<h3 id="发布网络分析服务"><a href="#发布网络分析服务" class="headerlink" title="发布网络分析服务"></a>发布网络分析服务</h3><p>步骤如下：</p>
+<p>1.利用ArcMap创建网络（如何创建网络，请查看ArcGIS帮助文档）<br>2.将创建的地图进行符号化<br>3.开启网络分析权限,添加分析图层<br>4.修改属性，将其发布为网络服务</p>
+<h4 id="利用ArcMap创建网络"><a href="#利用ArcMap创建网络" class="headerlink" title="利用ArcMap创建网络"></a>利用ArcMap创建网络</h4><p>创建的网络为：<br><img src="/2019/08/05/ArcGIS-API-for-JS07/01.png" alt="01.png"></p>
+<h4 id="将创建的地图进行符号化"><a href="#将创建的地图进行符号化" class="headerlink" title="将创建的地图进行符号化"></a>将创建的地图进行符号化</h4><p><img src="/2019/08/05/ArcGIS-API-for-JS07/02.png" alt="02.png"></p>
+<h4 id="开启网络分析权限并添加分析图层"><a href="#开启网络分析权限并添加分析图层" class="headerlink" title="开启网络分析权限并添加分析图层"></a>开启网络分析权限并添加分析图层</h4><p><img src="/2019/08/05/ArcGIS-API-for-JS07/03.png" alt="03.png"><br>右击空白处Network Analyst<br><img src="/2019/08/05/ArcGIS-API-for-JS07/04.png" alt="04.png"><br>网络分析工具条<br><img src="/2019/08/05/ArcGIS-API-for-JS07/05.png" alt="05.png"><br>如果想要进行最短路径分析，进行新建路径<br><img src="/2019/08/05/ArcGIS-API-for-JS07/06.png" alt="06.png"><br><img src="/2019/08/05/ArcGIS-API-for-JS07/07.png" alt="07.png"><br>注：将路径图层名称修改为英文名（此处改为Route）<br>如果进行服务区分析，添加服务区图层<br><img src="/2019/08/05/ArcGIS-API-for-JS07/08.png" alt="08.png"></p>
+<h4 id="修改属性并将其发布为网络服务"><a href="#修改属性并将其发布为网络服务" class="headerlink" title="修改属性并将其发布为网络服务"></a>修改属性并将其发布为网络服务</h4><p>利用ArcMap链接ArcGIS Server ，并取名为mynet<strong>（存放在Test目录下）</strong>，到达服务编辑器<br><img src="/2019/08/05/ArcGIS-API-for-JS07/09.png" alt="09.png"></p>
+<h3 id="查看服务是否发布成功"><a href="#查看服务是否发布成功" class="headerlink" title="查看服务是否发布成功"></a>查看服务是否发布成功</h3><p>从网站出输入网址<a href="http://localhost:6080/arcgis/rest/services,进入Test文件夹，可以看到我们刚刚发布的网络服务：" target="_blank" rel="noopener">http://localhost:6080/arcgis/rest/services,进入Test文件夹，可以看到我们刚刚发布的网络服务：</a><br><img src="/2019/08/05/ArcGIS-API-for-JS07/10.png" alt="10.png"></p>
+
+                
+                <div class="readmore">
+                    <a href="/2019/08/05/ArcGIS-API-for-JS07/">
+                        阅读更多
+                    </a>
+                </div>
+            </div>
+        
+            <div class="post-item">
+                <h1>
+                    <a href="/2019/08/05/ArcGIS-API-for-JS06/">
+                        ArcGIS Server之发布结果地图服务
+                    </a>
+                </h1>
+                <div class="create">
+                    <span>创建于</span>
+                    
+                        <time datetime="2019-08-05T09:09:57.000Z">
+                            2019-08-05
+                        </time>
+                    
+                    <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/ArcGIS/">ArcGIS</a></li></ul>
+                </div>
+                
+                    <h3 id="什么是结果地图服务？"><a href="#什么是结果地图服务？" class="headerlink" title="什么是结果地图服务？"></a>什么是结果地图服务？</h3><p>在ArcGIS中空间插值应该是我们经常用到的操作，但是在ArcGIS API却并没有提供相应的功能，上篇提到用GP服务来实现我们的功能，但是又有一个问题存在，插值之后的数据时栅格数据，在客户端我们应该怎么接受插值后的栅格数据呢，接受到的栅格信息我们又要怎么显示呢？此时就用到了我们的结果地图服务！！，所谓的结果地图服务，便是为了接受GP服务返回栅格数据的情况。</p>
+<h3 id="发布结果地图服务"><a href="#发布结果地图服务" class="headerlink" title="发布结果地图服务"></a>发布结果地图服务</h3><p>以空间插值为例，创建我们的结果地图服务，创建结果地图服务一般步骤如下：</p>
+<p>1.创建模型<br>2.修改我们的模型参数<br>3.运行新创建的模型<br>4.将运行后的结果进行渲染<br>5.将模型发布为服务</p>
+<h4 id="创建空间插值模型"><a href="#创建空间插值模型" class="headerlink" title="创建空间插值模型"></a>创建空间插值模型</h4><p><img src="/2019/08/05/ArcGIS-API-for-JS06/01.png" alt="01.png"><br>注：参数一定要用英文</p>
+<h4 id="修改我们的模型参数"><a href="#修改我们的模型参数" class="headerlink" title="修改我们的模型参数"></a>修改我们的模型参数</h4><p>将Input的类型改为要素集<br><img src="/2019/08/05/ArcGIS-API-for-JS06/02.png" alt="02.png"></p>
+<h4 id="运行新创建的模型"><a href="#运行新创建的模型" class="headerlink" title="运行新创建的模型"></a>运行新创建的模型</h4><p>运行我们的模型结果<br><img src="/2019/08/05/ArcGIS-API-for-JS06/03.png" alt="03.png"><br>将运行后的结果进行渲染（很重要）<br><img src="/2019/08/05/ArcGIS-API-for-JS06/04.png" alt="04.png"><br>注：很重要，如果选择的渲染方式不好，那么Web端返回的结果变不是很好。</p>
+<h4 id="将模型发布为服务"><a href="#将模型发布为服务" class="headerlink" title="将模型发布为服务"></a>将模型发布为服务</h4><p>点击地理处理-&gt;结果-&gt;右键模型共享为地理处理服务，服务名称为：Myking，存放在Test文件夹下面：<br><img src="/2019/08/05/ArcGIS-API-for-JS06/05.png" alt="05.png"><br>修改服务参数为同步，并查看地图服务结果<br><img src="/2019/08/05/ArcGIS-API-for-JS06/06.png" alt="06.png"><br>注：一定要勾选查看含地图服务的结果，很重要！！很重要！！很重要！！<br>修改服务属性参数<br><img src="/2019/08/05/ArcGIS-API-for-JS06/07.png" alt="07.png"></p>
+
+                
+                <div class="readmore">
+                    <a href="/2019/08/05/ArcGIS-API-for-JS06/">
+                        阅读更多
+                    </a>
+                </div>
+            </div>
+        
+            <div class="post-item">
+                <h1>
+                    <a href="/2019/08/05/ArcGIS-API-for-JS05/">
+                        ArcGIS Server之发布GP服务-返回矢量数据
+                    </a>
+                </h1>
+                <div class="create">
+                    <span>创建于</span>
+                    
+                        <time datetime="2019-08-05T08:51:51.000Z">
+                            2019-08-05
+                        </time>
+                    
+                    <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/ArcGIS/">ArcGIS</a></li></ul>
+                </div>
+                
+                    <h3 id="什么是GP服务"><a href="#什么是GP服务" class="headerlink" title="什么是GP服务"></a>什么是GP服务</h3><p>在WebGIS开发当中，虽然ArcGIS API提供给我们很多的接口，但是现实需求总是千变万化的，很多可能部分需求在我们的API中没有实现，而GP服务就弥补了这一个缺点，我们可以将ArcGIS中的GP工具发布为服务，提供给我们前端调用。</p>
+<h4 id="GP服务的分类"><a href="#GP服务的分类" class="headerlink" title="GP服务的分类"></a>GP服务的分类</h4><p>GP服务从返回类型上可以分为：</p>
+<blockquote>
+<p>返回矢量数据<br>返回栅格数据</p>
+</blockquote>
+<h4 id="GP服务的参数对应"><a href="#GP服务的参数对应" class="headerlink" title="GP服务的参数对应"></a>GP服务的参数对应</h4><p>在ArcGIS中，GP工具的参数和GP服务的参数是有一个对应参数的，在现实开发中，GP服务总是容易调用失败，这很有可能便是GP服务的参数不对应导致，因此：当我们发布GP服务时，参数便是我们高度重视的地方。以下是GP服务和GP工具参数对应表：<br><img src="/2019/08/05/ArcGIS-API-for-JS05/01.png" alt="01.png"></p>
+<h3 id="发布GP服务"><a href="#发布GP服务" class="headerlink" title="发布GP服务"></a>发布GP服务</h3><p> 在本实例中以缓冲区分析为例，发布一个GP服务。在ArcGIS10.1版本以后，发布GP服务之前需要将GP工具成功运行一次才可。发布GP服务的步骤大致分为以下几步：</p>
+<p>1.创建GP模型<br>2.修改模型参数，运行模型<br>3.在结果窗口将运行成功的GP模型共享为服务</p>
+<h4 id="创建GP模型"><a href="#创建GP模型" class="headerlink" title="创建GP模型"></a>创建GP模型</h4><p>新建一个工具箱并创建一个新模型取名为Mybuffer<br><img src="/2019/08/05/ArcGIS-API-for-JS05/02.png" alt="02.png"><br><img src="/2019/08/05/ArcGIS-API-for-JS05/03.png" alt="03.png"><br>右键Mybuffer点击编辑构建缓冲区模型<br><img src="/2019/08/05/ArcGIS-API-for-JS05/04.png" alt="04.png"></p>
+<h4 id="修改模型参数并运行模型"><a href="#修改模型参数并运行模型" class="headerlink" title="修改模型参数并运行模型"></a>修改模型参数并运行模型</h4><p><img src="/2019/08/05/ArcGIS-API-for-JS05/05.png" alt="05.png"><br>修改Input变量的数据类型，改为输入要素集<br><img src="/2019/08/05/ArcGIS-API-for-JS05/06.png" alt="06.png"><br>设置临时命名空间，右键空白处，点击模型属性，设置环境<br><img src="/2019/08/05/ArcGIS-API-for-JS05/07.png" alt="07.png"><br>点击保存运行模型<br><img src="/2019/08/05/ArcGIS-API-for-JS05/08.png" alt="08.png"><br>运行成功<br><img src="/2019/08/05/ArcGIS-API-for-JS05/09.png" alt="09.png"></p>
+<h4 id="在结果窗口将运行成功的GP模型共享为服务"><a href="#在结果窗口将运行成功的GP模型共享为服务" class="headerlink" title="在结果窗口将运行成功的GP模型共享为服务"></a>在结果窗口将运行成功的GP模型共享为服务</h4><p>点击地理处理-&gt;结果打开结果窗口<br><img src="/2019/08/05/ArcGIS-API-for-JS05/10.png" alt="10.png"><br>右键模型共享为地理处理服务<br><img src="/2019/08/05/ArcGIS-API-for-JS05/11.png" alt="11.png"></p>
+
+                
+                <div class="readmore">
+                    <a href="/2019/08/05/ArcGIS-API-for-JS05/">
+                        阅读更多
+                    </a>
+                </div>
+            </div>
+        
+            <div class="post-item">
+                <h1>
+                    <a href="/2019/08/05/ArcGIS-API-for-JS04/">
+                        ArcGIS Server之发布影像服务
+                    </a>
+                </h1>
+                <div class="create">
+                    <span>创建于</span>
+                    
+                        <time datetime="2019-08-05T08:25:58.000Z">
+                            2019-08-05
+                        </time>
+                    
+                    <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/ArcGIS/">ArcGIS</a></li></ul>
+                </div>
+                
+                    <p>在实际开发过程中，为了满足用户不同的需求，Esri制定了各种不同的服务类型，每一种服务类型都有着自己的优点，同时特定的服务类型可以实现特性的功能，此篇博客便说一说影像服务</p>
+<h3 id="什么是影像服务？"><a href="#什么是影像服务？" class="headerlink" title="什么是影像服务？"></a>什么是影像服务？</h3><p>影像服务是将栅格数据和影像数据作为服务发布出去。此时客户端便可以对栅格数据的进行访问。例如：查看栅格的波段信息，查看栅格某一个像元的值等等。</p>
+<h3 id="什么数据可以发布为影像服务？"><a href="#什么数据可以发布为影像服务？" class="headerlink" title="什么数据可以发布为影像服务？"></a>什么数据可以发布为影像服务？</h3><p>发布影像服务，对于原始数据是有一定的要求的，当数据出现问题时，数据是不可以发布成功的，影像服务支持的数据主要有：</p>
+<blockquote>
+<p>栅格数据集<br>栅格图层<br>镶嵌数据集<br>镶嵌图层</p>
+</blockquote>
+<h3 id="发布影像服务"><a href="#发布影像服务" class="headerlink" title="发布影像服务"></a>发布影像服务</h3><p>发布影像服务非常简单，与地图服务不同的是：发布影像服务需要在ArcCatalog中进行，主要分步骤为：</p>
+<p>1.在ArcCatalog找到我们要栅格数据集。<br>2.通过ArcCatalog将我们的栅格共享为影像服务。<br>3.查看服务是否发布成功</p>
+<h4 id="在ArcCatalog找到我们要栅格数据集"><a href="#在ArcCatalog找到我们要栅格数据集" class="headerlink" title="在ArcCatalog找到我们要栅格数据集"></a>在ArcCatalog找到我们要栅格数据集</h4><p>发布的数据为数字高程模型（DEM）<br><img src="/2019/08/05/ArcGIS-API-for-JS04/01.png" alt="01.png"></p>
+<h4 id="将栅格数据共享为影像服务。"><a href="#将栅格数据共享为影像服务。" class="headerlink" title="将栅格数据共享为影像服务。"></a>将栅格数据共享为影像服务。</h4><p><img src="/2019/08/05/ArcGIS-API-for-JS04/02.png" alt="02.png"><br>到达服务编辑器，发布最简单的影像服务，直接点击发布即可-&gt;发布成功。<br><img src="/2019/08/05/ArcGIS-API-for-JS04/03.png" alt="03.png"></p>
+<h3 id="可能发生的错误（若服务发布成功，此处可略去）"><a href="#可能发生的错误（若服务发布成功，此处可略去）" class="headerlink" title="可能发生的错误（若服务发布成功，此处可略去）"></a>可能发生的错误（若服务发布成功，此处可略去）</h3><h4 id="错误发生"><a href="#错误发生" class="headerlink" title="错误发生"></a>错误发生</h4><p>发布服务告知我服务定义失败<br><img src="/2019/08/05/ArcGIS-API-for-JS04/04.png" alt="04.png"></p>
+<h4 id="错误原因"><a href="#错误原因" class="headerlink" title="错误原因"></a>错误原因</h4><p>此错误发生的原因是你的DEM存放在某一个数据库中，导致数据在数据库中但是数据的格式有错误。例如，我想把dem导出来，却发现也不能导出，如图所示：<br><img src="/2019/08/05/ArcGIS-API-for-JS04/05.png" alt="05.png"></p>
+<h4 id="如何解决错误"><a href="#如何解决错误" class="headerlink" title="如何解决错误"></a>如何解决错误</h4><p>1.用ArcMap打开相应的Dem<br>2.从ArcMap中将相应的栅格数据导出到硬盘上<br>3.重新发布，即可成功。</p>
+<h5 id="用ArcMap打开相应的Dem"><a href="#用ArcMap打开相应的Dem" class="headerlink" title="用ArcMap打开相应的Dem"></a>用ArcMap打开相应的Dem</h5><p><img src="/2019/08/05/ArcGIS-API-for-JS04/06.png" alt="06.png"></p>
+<h5 id="从ArcMap中将相应的栅格数据导出到硬盘上"><a href="#从ArcMap中将相应的栅格数据导出到硬盘上" class="headerlink" title="从ArcMap中将相应的栅格数据导出到硬盘上"></a>从ArcMap中将相应的栅格数据导出到硬盘上</h5><p><img src="/2019/08/05/ArcGIS-API-for-JS04/07.png" alt="07.png"><br><img src="/2019/08/05/ArcGIS-API-for-JS04/08.png" alt="08.png"><br>然后在catalog中重新发布。</p>
+
+                
+                <div class="readmore">
+                    <a href="/2019/08/05/ArcGIS-API-for-JS04/">
+                        阅读更多
+                    </a>
+                </div>
+            </div>
         
             <div class="post-item">
                 <h1>
@@ -256,232 +397,6 @@
                 </div>
             </div>
         
-            <div class="post-item">
-                <h1>
-                    <a href="/2019/07/04/git/">
-                        git
-                    </a>
-                </h1>
-                <div class="create">
-                    <span>创建于</span>
-                    
-                        <time datetime="2019-07-04T14:24:57.000Z">
-                            2019-07-04
-                        </time>
-                    
-                    <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/git/">git</a></li></ul>
-                </div>
-                
-                    <h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><blockquote>
-<p>初始化一个Git仓库，使用git init命令。</p>
-</blockquote>
-<blockquote>
-<p>添加文件到Git仓库，分两步：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">使用命令git add &lt;file&gt;，注意，可反复多次使用，添加多个文件；</span><br><span class="line">使用命令git commit -m &lt;message&gt;，完成。</span><br></pre></td></tr></table></figure>
-<h3 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h3><blockquote>
-<p>首先需要理解工作区和版本库的概念：</p>
-</blockquote>
-<p>工作区（Working Directory）：就是可以在电脑上看到的目录，比如目录文件夹，就是一个工作区；<br>版本库（Repository）: 工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。<br>git的版本库中存放很多的东西，其中最重要的就是stage(index)的暂存区，还有git为我们创建的第一个分支master，以及指向maste分支的一个HEAD指针。<br><img src="/2019/07/04/git/01.png" alt="01.png"></p>
-<blockquote>
-<p>将文件提交到版本库中需要两个步骤(也可以说是三个步骤)：</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git status  可以查看哪些文件在本次修改了，以便我们清楚在下一步应该提交哪些文件</span><br><span class="line">git add &lt;filePath&gt;   此命令是将file文件提交到暂存区，此命令是单个文件提交，也可以用</span><br><span class="line">git add . 将工作区所有文件都提交，但一般没有这个必要，只需要将本次修改提交就好；</span><br><span class="line">git commit -m<span class="string">'提交描述'</span>    次命令是将暂存区的所有文件提交到版本库中的当前分支上，一般提交在后面加上本次修改的描述。</span><br></pre></td></tr></table></figure>
-<h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><p>总结：</p>
-<blockquote>
-<p>HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset –hard commit_id。<br>穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。<br>要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1、git <span class="built_in">log</span>命令显示从最近到最远的提交日志</span><br><span class="line">2、如果嫌输出信息太多，看得眼花缭乱的，可以试试加上--pretty=oneline参数：$ git <span class="built_in">log</span> --pretty=oneline</span><br><span class="line">看到的一大串类似1094adb...的是commit id（版本号）</span><br><span class="line">3、要把当前版本回退到上一个版本，就可以使用git reset命令：$ git reset --hard HEAD^</span><br></pre></td></tr></table></figure>
-<h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -- readme.txt</span><br></pre></td></tr></table></figure>
-<p>一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；<br>一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。<br>总之，就是让这个文件回到最近一次git commit或git add时的状态。</p>
-<p>场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout – file。<br>场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD <file>，就回到了场景1，第二步按场景1操作。<br>场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。</file></p>
-<h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><p>命令git rm用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。</p>
-<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><h3 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h3><p>1、要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；</p>
-<p>2、关联后，使用命令git push -u origin master第一次推送master分支的所有内容；</p>
-<p>3、此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；</p>
-<p>分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，而SVN在没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步，方便！</p>
-<h3 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h3><p>若我们从零开发，那么最好的方式是先创建远程库，然后，从远程库克隆。<br>1、首先，登陆GitHub，创建一个新的仓库。<br>2、勾选Initialize this repository with a README，这样GitHub会自动为我们创建一个README.md文件。创建完毕后，可以看到README.md文件。<br>3、用命令git clone克隆一个本地库。</p>
-<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h3 id="创建与合并分支"><a href="#创建与合并分支" class="headerlink" title="创建与合并分支"></a>创建与合并分支</h3><p>总结：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">查看分支：git branch</span><br><span class="line"></span><br><span class="line">创建分支：git branch &lt;name&gt;</span><br><span class="line"></span><br><span class="line">切换分支：git checkout &lt;name&gt;</span><br><span class="line"></span><br><span class="line">创建+切换分支：git checkout -b &lt;name&gt;</span><br><span class="line"></span><br><span class="line">合并某分支到当前分支：git merge &lt;name&gt;</span><br><span class="line"></span><br><span class="line">删除分支：git branch -d &lt;name&gt;</span><br></pre></td></tr></table></figure></p>
-<p>1、创建dev分支，然后切换到dev分支：$ git checkout -b dev<br>git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：<br>$ git branch dev<br>$ git checkout dev</p>
-<p>2、用git branch命令查看当前分支，git branch命令会列出所有分支，当前分支前面会标一个*号：$ git branch<br>3、我们就可以在dev分支上正常提交<br>4、dev分支的工作完成，我们就可以切换回master分支：git checkout master<br>5、我们把dev分支的工作成果合并到master分支上：git merge dev<br>git merge命令用于合并指定分支到当前分支<br>6、合并完成后，就可以放心地删除dev分支了：git branch -d dev<br>7、删除后，查看branch，就只剩下master分支了</p>
-<h3 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h3><p>当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。</p>
-<p>解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。</p>
-<p>用git log –graph命令可以看到分支合并图。</p>
-<h3 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h3><blockquote>
-<p>在实际开发中，我们应该按照几个基本原则进行分支管理：</p>
-</blockquote>
-<p>首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；</p>
-<p>那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；</p>
-<p>你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。</p>
-<h3 id="Bug分支"><a href="#Bug分支" class="headerlink" title="Bug分支"></a>Bug分支</h3><p>修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；<br>当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。</p>
-<h3 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h3><p>开发一个新feature，最好新建一个分支；</p>
-<p>如果要丢弃一个没有被合并过的分支，可以通过git branch -D 【name】强行删除。</p>
-<h3 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h3><p>多人协作的工作模式通常是这样：</p>
-<p>1、首先，可以试图用git push origin 【branch-name】推送自己的修改；</p>
-<p>2、如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；</p>
-<p>3、如果合并有冲突，则解决冲突，并在本地提交；</p>
-<p>4、没有冲突或者解决掉冲突后，再用git push origin 【branch-name】推送就能成功！</p>
-<p>如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用命令git branch –set-upstream-to 【branch-name】 origin/【branch-name】。</p>
-<p>这就是多人协作的工作模式，一旦熟悉了，就非常简单。</p>
-<h3 id="Rebase"><a href="#Rebase" class="headerlink" title="Rebase"></a>Rebase</h3><p>rebase操作可以把本地未push的分叉提交历史整理成直线；</p>
-<p>rebase的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比。</p>
-<h2 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h2><h3 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h3><p>命令git tag 【tagname】用于新建一个标签，默认为HEAD，也可以指定一个commit id；</p>
-<p>命令git tag -a 【tagname】 -m “blablabla…”可以指定标签信息；</p>
-<p>命令git tag可以查看所有标签</p>
-<h3 id="操作标签"><a href="#操作标签" class="headerlink" title="操作标签"></a>操作标签</h3><p>命令git push origin 【tagname】可以推送一个本地标签；</p>
-<p>命令git push origin –tags可以推送全部未推送过的本地标签；</p>
-<p>命令git tag -d 【tagname】可以删除一个本地标签；</p>
-<p>命令git push origin :refs/tags/【tagname】可以删除一个远程标签。</p>
-<h2 id="git命令汇总"><a href="#git命令汇总" class="headerlink" title="git命令汇总"></a>git命令汇总</h2><p><a href="https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf" target="_blank" rel="noopener">Git Cheat Sheet</a></p>
-
-                
-                <div class="readmore">
-                    <a href="/2019/07/04/git/">
-                        阅读更多
-                    </a>
-                </div>
-            </div>
-        
-            <div class="post-item">
-                <h1>
-                    <a href="/2019/07/03/前端工作流/">
-                        前端工作流搭建
-                    </a>
-                </h1>
-                <div class="create">
-                    <span>创建于</span>
-                    
-                        <time datetime="2019-07-03T14:24:57.000Z">
-                            2019-07-03
-                        </time>
-                    
-                    <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/其他前端技术/">其他前端技术</a></li></ul>
-                </div>
-                
-                    <h1 id="1-工作流创建"><a href="#1-工作流创建" class="headerlink" title="1. 工作流创建"></a>1. 工作流创建</h1><h2 id="github申请注册"><a href="#github申请注册" class="headerlink" title="github申请注册"></a>github申请注册</h2><h2 id="建立ZJHBT仓库"><a href="#建立ZJHBT仓库" class="headerlink" title="建立ZJHBT仓库"></a>建立ZJHBT仓库</h2><p> 若仓库类型为Private,可以在setting —&gt; Collaborator给其他人开启自己版本库的权限。（最多3个，否则需包月）</p>
-<h2 id="Jenkins"><a href="#Jenkins" class="headerlink" title="Jenkins"></a>Jenkins</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p> 安装java 环境，下载对应版本，这里下载jdk-8u211-windows-x64.exe，须有Orale账户<br> 本项目Jenkins账户，访问网址http:xx.xx.xx（默认端口8080，可修改）</p>
-<h3 id="Jenkins与git配置"><a href="#Jenkins与git配置" class="headerlink" title="Jenkins与git配置"></a>Jenkins与git配置</h3><p>参考：<a href="https://juejin.im/post/5ad1980e6fb9a028c42ea1be" target="_blank" rel="noopener">https://juejin.im/post/5ad1980e6fb9a028c42ea1be</a></p>
-
-                
-                <div class="readmore">
-                    <a href="/2019/07/03/前端工作流/">
-                        阅读更多
-                    </a>
-                </div>
-            </div>
-        
-            <div class="post-item">
-                <h1>
-                    <a href="/2019/02/15/tcp/">
-                        tcp
-                    </a>
-                </h1>
-                <div class="create">
-                    <span>创建于</span>
-                    
-                        <time datetime="2019-02-15T01:40:54.000Z">
-                            2019-02-15
-                        </time>
-                    
-                    <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/基础前端技术/">基础前端技术</a></li></ul>
-                </div>
-                
-                    <blockquote>
-<p>参考：<a href="https://juejin.im/post/5a7ef7ce5188257a856f38b0" target="_blank" rel="noopener">https://juejin.im/post/5a7ef7ce5188257a856f38b0</a></p>
-</blockquote>
-<h2 id="TCP三次握手与四次挥手解释1"><a href="#TCP三次握手与四次挥手解释1" class="headerlink" title="TCP三次握手与四次挥手解释1"></a>TCP三次握手与四次挥手解释1</h2><p>首先来看看OSI的七层模型：<br><img src="/2019/02/15/tcp/OSI.jpg" alt="OSI.jpg"><br>我们需要知道TCP工作在网络OSI的七层模型中的第四层——Transport层，IP在第三层——Network层，ARP在第二层——Data Link层；在第二层上的数据，我们把它叫Frame，在第三层上的数据叫Packet，第四层的数据叫Segment。 同时，我们需要简单的知道，数据从应用层发下来，会在每一层都会加上头部信息，进行封装，然后再发送到数据接收端。这个基本的流程你需要知道，就是每个数据都会经过数据的封装和解封装的过程。 在OSI七层模型中，每一层的作用和对应的协议如下：<br><img src="/2019/02/15/tcp/OSI01.jpg" alt="OSI01.jpg"><br>TCP是一个协议，那这个协议是如何定义的，它的数据格式是什么样子的呢？要进行更深层次的剖析，就需要了解，甚至是熟记TCP协议中每个字段的含义。哦，来吧。</p>
-<p>TCP是面向连接的，无论哪一方向另一方发送数据之前，都必须先在双方之间建立一条连接。在TCP/IP协议中，TCP协议提供可靠的连接服务，连接是通过三次握手进行初始化的。三次握手的目的是同步连接双方的序列号和确认号并交换 TCP窗口大小信息。这就是面试中经常会被问到的TCP三次握手。只是了解TCP三次握手的概念，对你获得一份工作是没有任何帮助的，你需要去了解TCP三次握手中的一些细节。先来看图说话。<br><img src="/2019/02/15/tcp/tcp03.jpg" alt="tcp03.jpg"></p>
-<h3 id="握手说明"><a href="#握手说明" class="headerlink" title="握手说明"></a>握手说明</h3><ul>
-<li>第一次握手：建立连接。客户端发送连接请求报文段，将SYN位置为1，Sequence Number为x；然后，客户端进入SYN_SEND状态，等待服务器的确认；</li>
-<li>第二次握手：服务器收到SYN报文段。服务器收到客户端的SYN报文段，需要对这个SYN报文段进行确认，设置Acknowledgment Number为x+1(Sequence Number+1)；同时，自己自己还要发送SYN请求信息，将SYN位置为1，Sequence Number为y；服务器端将上述所有信息放到一个报文段（即SYN+ACK报文段）中，一并发送给客户端，此时服务器进入SYN_RECV状态；</li>
-<li>第三次握手：客户端收到服务器的SYN+ACK报文段。然后将Acknowledgment Number设置为y+1，向服务器发送ACK报文段，这个报文段发送完毕以后，客户端和服务器端都进入ESTABLISHED状态，完成TCP三次握手。<br>完成了三次握手，客户端和服务器端就可以开始传送数据。以上就是TCP三次握手的总体介绍。<br>那四次分手呢？</li>
-</ul>
-<h3 id="挥手说明"><a href="#挥手说明" class="headerlink" title="挥手说明"></a>挥手说明</h3><p>当客户端和服务器通过三次握手建立了TCP连接以后，当数据传送完毕，肯定是要断开TCP连接的啊。那对于TCP的断开连接，这里就有了神秘的“四次分手”。</p>
-<ul>
-<li>第一次分手：主机1（可以使客户端，也可以是服务器端），设置Sequence Number和Acknowledgment Number，向主机2发送一个FIN报文段；此时，主机1进入FIN_WAIT_1状态；这表示主机1没有数据要发送给主机2了；<br>-第二次分手：主机2收到了主机1发送的FIN报文段，向主机1回一个ACK报文段，Acknowledgment Number为Sequence Number加1；主机1进入FIN_WAIT_2状态；主机2告诉主机1，我“同意”你的关闭请求；</li>
-<li>第三次分手：主机2向主机1发送FIN报文段，请求关闭连接，同时主机2进入LAST_ACK状态；</li>
-<li>第四次分手：主机1收到主机2发送的FIN报文段，向主机2发送ACK报文段，然后主机1进入TIME_WAIT状态；主机2收到主机1的ACK报文段以后，就关闭连接；此时，主机1等待2MSL后依然没有收到回复，则证明Server端已正常关闭，那好，主机1也可以关闭连接了。</li>
-</ul>
-<h3 id="为什么要三次握手"><a href="#为什么要三次握手" class="headerlink" title="为什么要三次握手?"></a>为什么要三次握手?</h3><p>既然总结了TCP的三次握手，那为什么非要三次呢？怎么觉得两次就可以完成了。那TCP为什么非要进行三次连接呢？在谢希仁的《计算机网络》中是这样说的：</p>
-<p>为了防止已失效的连接请求报文段突然又传送到了服务端，因而产生错误。</p>
-<p>在书中同时举了一个例子，如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“已失效的连接请求报文段”的产生在这样一种情况下：client发出的第一个连接请求报文段并没有丢失，而是在某个网络结点长时间的滞留了，以致延误到连接释放以后的某个时间才到达server。本来这是一个早已失效的报文段。但server收到此失效的连接请求报文段后，就误认为是client再次发出的一个新的连接请求。于是就向client发出确认报文段，同意建立连接。假设不采用“三次握手”，那么只要server发出确认，新的连接就建立了。由于现在client并没有发出建立连接的请求，因此不会理睬server的确认，也不会向server发送数据。但server却以为新的运输连接已经建立，并一直等待client发来数据。这样，server的很多资源就白白浪费掉了。采用“三次握手”的办法可以防止上述现象发生。例如刚才那种情况，client不会向server的确认发出确认。server由于收不到确认，就知道client并没有要求建立连接。”</span><br></pre></td></tr></table></figure></p>
-<p>这就很明白了，防止了服务器端的一直等待而浪费资源。</p>
-<h3 id="为什么要四次挥手"><a href="#为什么要四次挥手" class="headerlink" title="为什么要四次挥手?"></a>为什么要四次挥手?</h3><p>那四次分手又是为何呢？TCP协议是一种面向连接的、可靠的、基于字节流的运输层通信协议。TCP是全双工模式，这就意味着，当主机1发出FIN报文段时，只是表示主机1已经没有数据要发送了，主机1告诉主机2，它的数据已经全部发送完毕了；但是，这个时候主机1还是可以接受来自主机2的数据；当主机2返回ACK报文段时，表示它已经知道主机1没有数据发送了，但是主机2还是可以发送数据到主机1的；当主机2也发送了FIN报文段时，这个时候就表示主机2也没有数据要发送了，就会告诉主机1，我也没有数据要发送了，之后彼此就会愉快的中断这次TCP连接。如果要正确的理解四次分手的原理，就需要了解四次分手过程中的状态变化。</p>
-<ul>
-<li>FIN_WAIT_1: 这个状态要好好解释一下，其实FIN_WAIT_1和FIN_WAIT_2状态的真正含义都是表示等待对方的FIN报文。而这两种状态的区别是：FIN_WAIT_1状态实际上是当SOCKET在ESTABLISHED状态时，它想主动关闭连接，向对方发送了FIN报文，此时该SOCKET即进入到FIN_WAIT_1状态。而当对方回应ACK报文后，则进入到FIN_WAIT_2状态，当然在实际的正常情况下，无论对方何种情况下，都应该马上回应ACK报文，所以FIN_WAIT_1状态一般是比较难见到的，而FIN_WAIT_2状态还有时常常可以用netstat看到。（主动方）</li>
-<li>FIN_WAIT_2：上面已经详细解释了这种状态，实际上FIN_WAIT_2状态下的SOCKET，表示半连接，也即有一方要求close连接，但另外还告诉对方，我暂时还有点数据需要传送给你(ACK信息)，稍后再关闭连接。（主动方）</li>
-<li>CLOSE_WAIT：这种状态的含义其实是表示在等待关闭。怎么理解呢？当对方close一个SOCKET后发送FIN报文给自己，你系统毫无疑问地会回应一个ACK报文给对方，此时则进入到CLOSE_WAIT状态。接下来呢，实际上你真正需要考虑的事情是察看你是否还有数据发送给对方，如果没有的话，那么你也就可以 close这个SOCKET，发送FIN报文给对方，也即关闭连接。所以你在CLOSE_WAIT状态下，需要完成的事情是等待你去关闭连接。（被动方）</li>
-<li>LAST_ACK: 这个状态还是比较容易好理解的，它是被动关闭一方在发送FIN报文后，最后等待对方的ACK报文。当收到ACK报文后，也即可以进入到CLOSED可用状态了。（被动方）</li>
-<li>TIME_WAIT: 表示收到了对方的FIN报文，并发送出了ACK报文，就等2MSL后即可回到CLOSED可用状态了。如果FINWAIT1状态下，收到了对方同时带FIN标志和ACK标志的报文时，可以直接进入到TIME_WAIT状态，而无须经过FIN_WAIT_2状态。（主动方）</li>
-<li>CLOSED: 表示连接中断。</li>
-</ul>
-<h2 id="TCP三次握手与四次挥手解释2"><a href="#TCP三次握手与四次挥手解释2" class="headerlink" title="TCP三次握手与四次挥手解释2"></a>TCP三次握手与四次挥手解释2</h2><h3 id="TCP三次握手"><a href="#TCP三次握手" class="headerlink" title="TCP三次握手"></a>TCP三次握手</h3><p><img src="/2019/02/15/tcp/tcp01.jpg" alt="tcp01.jpg"></p>
-<blockquote>
-<p>PS：TCP协议中，主动发起请求的一端称为『客户端』，被动连接的一端称为『服务端』。不管是客户端还是服务端，TCP连接建立完后都能发送和接收数据。</p>
-</blockquote>
-<p>起初，服务器和客户端都为CLOSED状态。在通信开始前，双方都得创建各自的传输控制块（TCB）。<br>服务器创建完TCB后遍进入LISTEN状态，此时准备接收客户端发来的连接请求。</p>
-<h4 id="第一次握手"><a href="#第一次握手" class="headerlink" title="第一次握手"></a>第一次握手</h4><p>客户端向服务端发送连接请求报文段。该报文段的头部中SYN=1，ACK=0，seq=x。请求发送后，客户端便进入SYN-SENT状态。</p>
-<ul>
-<li>PS1：SYN=1，ACK=0表示该报文段为连接请求报文。</li>
-<li>PS2：x为本次TCP通信的字节流的初始序号。 TCP规定：SYN=1的报文段不能有数据部分，但要消耗掉一个序号。</li>
-</ul>
-<h4 id="第二次握手"><a href="#第二次握手" class="headerlink" title="第二次握手"></a>第二次握手</h4><p>服务端收到连接请求报文段后，如果同意连接，则会发送一个应答：SYN=1，ACK=1，seq=y，ack=x+1。<br>该应答发送完成后便进入SYN-RCVD状态。</p>
-<ul>
-<li>PS1：SYN=1，ACK=1表示该报文段为连接同意的应答报文。</li>
-<li>PS2：seq=y表示服务端作为发送者时，发送字节流的初始序号。</li>
-<li>PS3：ack=x+1表示服务端希望下一个数据报发送序号从x+1开始的字节。</li>
-</ul>
-<h4 id="第三次握手"><a href="#第三次握手" class="headerlink" title="第三次握手"></a>第三次握手</h4><p>当客户端收到连接同意的应答后，还要向服务端发送一个确认报文段，表示：服务端发来的连接同意应答已经成功收到。<br>该报文段的头部为：ACK=1，seq=x+1，ack=y+1。<br>客户端发完这个报文段后便进入ESTABLISHED状态，服务端收到这个应答后也进入ESTABLISHED状态，此时连接的建立完成！<br>为什么连接建立需要三次握手，而不是两次握手？<br>防止失效的连接请求报文段被服务端接收，从而产生错误。<br>PS：失效的连接请求：若客户端向服务端发送的连接请求丢失，客户端等待应答超时后就会再次发送连接请求，此时，上一个连接请求就是『失效的』。<br>若建立连接只需两次握手，客户端并没有太大的变化，仍然需要获得服务端的应答后才进入ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状态。此时如果网络拥塞，客户端发送的连接请求迟迟到不了服务端，客户端便超时重发请求，如果服务端正确接收并确认应答，双方便开始通信，通信结束后释放连接。此时，如果那个失效的连接请求抵达了服务端，由于只有两次握手，服务端收到请求就会进入ESTABLISHED状态，等待发送数据或主动发送数据。但此时的客户端早已进入CLOSED状态，服务端将会一直等待下去，这样浪费服务端连接资源。</p>
-<h3 id="TCP四次挥手"><a href="#TCP四次挥手" class="headerlink" title="TCP四次挥手"></a>TCP四次挥手</h3><p><img src="/2019/02/15/tcp/tcp02.jpg" alt="tcp02.jpg"><br>TCP连接的释放一共需要四步，因此称为『四次挥手』。<br>我们知道，TCP连接是双向的，因此在四次挥手中，前两次挥手用于断开一个方向的连接，后两次挥手用于断开另一方向的连接。</p>
-<h4 id="第一次挥手"><a href="#第一次挥手" class="headerlink" title="第一次挥手"></a>第一次挥手</h4><p>若A认为数据发送完成，则它需要向B发送连接释放请求。该请求只有报文头，头中携带的主要参数为：<br>FIN=1，seq=u。此时，A将进入FIN-WAIT-1状态。</p>
-<ul>
-<li>PS1：FIN=1表示该报文段是一个连接释放请求。</li>
-<li>PS2：seq=u，u-1是A向B发送的最后一个字节的序号。</li>
-</ul>
-<h4 id="第二次挥手"><a href="#第二次挥手" class="headerlink" title="第二次挥手"></a>第二次挥手</h4><p>B收到连接释放请求后，会通知相应的应用程序，告诉它A向B这个方向的连接已经释放。此时B进入CLOSE-WAIT状态，并向A发送连接释放的应答，其报文头包含：<br>ACK=1，seq=v，ack=u+1。</p>
-<ul>
-<li>PS1：ACK=1：除TCP连接请求报文段以外，TCP通信过程中所有数据报的ACK都为1，表示应答。</li>
-<li>PS2：seq=v，v-1是B向A发送的最后一个字节的序号。</li>
-<li>PS3：ack=u+1表示希望收到从第u+1个字节开始的报文段，并且已经成功接收了前u个字节。</li>
-</ul>
-<p>A收到该应答，进入FIN-WAIT-2状态，等待B发送连接释放请求。<br>第二次挥手完成后，A到B方向的连接已经释放，B不会再接收数据，A也不会再发送数据。但B到A方向的连接仍然存在，B可以继续向A发送数据。</p>
-<h4 id="第三次挥手"><a href="#第三次挥手" class="headerlink" title="第三次挥手"></a>第三次挥手</h4><p>当B向A发完所有数据后，向A发送连接释放请求，请求头：FIN=1，ACK=1，seq=w，ack=u+1。B便进入LAST-ACK状态。</p>
-<h4 id="第四次挥手"><a href="#第四次挥手" class="headerlink" title="第四次挥手"></a>第四次挥手</h4><p>A收到释放请求后，向B发送确认应答，此时A进入TIME-WAIT状态。该状态会持续2MSL时间，若该时间段内没有B的重发请求的话，就进入CLOSED状态，撤销TCB。当B收到确认应答后，也便进入CLOSED状态，撤销TCB。</p>
-<p>为什么A要先进入TIME-WAIT状态，等待2MSL时间后才进入CLOSED状态？ 为了保证B能收到A的确认应答。 若A发完确认应答后直接进入CLOSED状态，那么如果该应答丢失，B等待超时后就会重新发送连接释放请求，但此时A已经关闭了，不会作出任何响应，因此B永远无法正常关闭。</p>
-
-                
-                <div class="readmore">
-                    <a href="/2019/02/15/tcp/">
-                        阅读更多
-                    </a>
-                </div>
-            </div>
-        
-            <div class="post-item">
-                <h1>
-                    <a href="/2019/01/07/类class/">
-                        类class
-                    </a>
-                </h1>
-                <div class="create">
-                    <span>创建于</span>
-                    
-                        <time datetime="2019-01-07T07:48:34.000Z">
-                            2019-01-07
-                        </time>
-                    
-                    
-                </div>
-                
-                    
-                
-                <div class="readmore">
-                    <a href="/2019/01/07/类class/">
-                        阅读更多
-                    </a>
-                </div>
-            </div>
-        
     </div>
 
 
@@ -536,7 +451,7 @@
             <a href="/tags">
                 标签
                 <sup style="font-size: 12px">
-                    [25]
+                    [29]
                 </sup>
             </a>
         </h2>
@@ -545,7 +460,7 @@
 <aside id="categories">
     <h2>分类</h2>
     
-        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ArcGIS/">ArcGIS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Node/">Node</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/React/">React</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/VUE/">VUE</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/其他前端技术/">其他前端技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/基础前端技术/">基础前端技术</a></li></ul>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ArcGIS/">ArcGIS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Cesium/">Cesium</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Node/">Node</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/React/">React</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/VUE/">VUE</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/其他/">其他</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/基础前端技术/">基础前端技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/小程序/">小程序</a></li></ul>
     
 </aside>
 
@@ -553,7 +468,7 @@
 <aside id="acchives">
     <h2>归档</h2>
     
-    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
     
 </aside>
 

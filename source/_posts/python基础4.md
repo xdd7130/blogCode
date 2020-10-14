@@ -5,7 +5,7 @@ categories:
 - python
 tags: [python基础]
 ---
-Python 模块
+## Python 模块
 Python 模块(Module)，是一个 Python 文件，以 .py 结尾，包含了 Python 对象定义和Python语句。
 
 模块让你能够有逻辑地组织你的 Python 代码段。
@@ -71,8 +71,8 @@ content = dir(math)
  
 print content;
 ```
-### Python 文件I/O
-#### 打印到屏幕
+## Python 文件I/O
+### 打印到屏幕
 最简单的输出方法是用print语句，你可以给它传递零个或多个用逗号隔开的表达式。此函数把你传递的表达式转换成一个字符串表达式，并将结果写到标准输出如下：
 ```
 #!/usr/bin/python
@@ -109,3 +109,44 @@ read（）方法从一个打开的文件中读取一个字符串。需要重点�
 
 remove()方法
 你可以用remove()方法删除文件，需要提供要删除的文件名作为参数
+
+tell()方法,seek（offset [,from]）
+文件定位
+
+重命名和删除文件
+
+Python的os模块提供了帮你执行文件处理操作的方法，比如重命名和删除文件。
+要使用这个模块，你必须先导入它，然后才可以调用相关的各种功能。
+rename()方法：
+rename()方法需要两个参数，当前的文件名和新文件名。
+
+```bash
+os.rename(current_file_name, new_file_name)
+```
+下例将重命名一个已经存在的文件test1.txt。
+```
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+import os
+ 
+# 重命名文件test1.txt到test2.txt。
+os.rename( "test1.txt", "test2.txt" )
+```
+
+remove()方法
+你可以用remove()方法删除文件，需要提供要删除的文件名作为参数。
+语法：
+```
+os.remove(file_name)
+```
+例子：
+```
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+import os
+ 
+# 删除一个已经存在的文件test2.txt
+os.remove("test2.txt")
+```
