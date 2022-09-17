@@ -2,7 +2,7 @@
 title: vuex+node+express+token登录
 date: 2019-09-22 16:38:30
 categories:
-- VUE
+- Vue
 tags: [Node.js,vue]
 ---
 
