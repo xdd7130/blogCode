@@ -4,7 +4,7 @@ date: 2022-09-14 20:22:12
 categories:
 - 笔记
 tags: 
-    - 笔记
+    - [mock, linux]
 ---
 # yapi解压
 ```
