@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之GraphicsLayer
 date: 2019-08-06 15:10:35
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 在ArcGIS API中有一种图层叫做GraphicsLayer，GraphicsLayer是一种客户端图层，GraphicsLayer中的图形我们称作Graphic，它对应着 esri/graphic，一个Graphic对象由四部分组成：geometry,symbol,attribute,infoTemplate组成，Graphic对象在我们开发中用到的非常多。例如：利用Graphic实现图形的高亮显示等等。
 ### 需求

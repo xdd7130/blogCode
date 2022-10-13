@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之动态图层
 date: 2019-08-06 16:42:34
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 动态图层主要特点：
 

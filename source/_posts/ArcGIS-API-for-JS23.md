@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之地图输出
 date: 2019-08-06 17:54:17
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 在WebGIS中地图输出是一个比较常用的功能，当我们制图结束时，往往要将我们的地图打印成一张图片保存起来，在ArcGIS API要想实现地图打印，需要借助PrintingTools工具，此工具实质上是一个GP工具，因为是GP工具，所以地图的生成是在服务器端生成的，也可以叫做服务器端打印.
 服务器端打印的执行对象是 PrintTask，打印的参数是 PrintParameters，通过设置打印模板对象PrintTemplate，可以对图片的大小，像素，格式等进行设置

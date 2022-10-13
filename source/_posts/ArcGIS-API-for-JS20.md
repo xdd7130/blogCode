@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之编辑服务器端图层
 date: 2019-08-06 17:19:00
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 在现实需求中，我们不仅仅需要编辑客户端图层，也有可能去编辑服务器端图层，要想编辑服务器端的图层，必须要将地图发布为：要素服务
 ### 需求（服务器端图层编辑）

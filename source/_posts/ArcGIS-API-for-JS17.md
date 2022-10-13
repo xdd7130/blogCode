@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript调用结果地图服务
 date: 2019-08-06 16:07:59
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 结果地图服务也是GP服务的一种，当GP服务的结果返回栅格数据时，我们往往使用结果地图服务来对生成的栅格数据进行渲染，本实例是：克里金差值
 ### ArcGIS API调用结果地图服务

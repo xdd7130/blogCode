@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之调用动态地图服务
 date: 2019-08-06 13:40:02
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 主要记录一下在ArcGIS API如何调用自己发布的动态地图服务,利用动态地图服务我们可以完成哪一些需求等等。
 ### 调用动态地图服务

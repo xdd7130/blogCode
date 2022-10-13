@@ -3,7 +3,7 @@ title: ArcGIS API For JavaScript本地部署（IIS）
 date: 2019-08-05 18:23:24
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 在windows系统，我们总是将ArcGIS API For JavaScript部署在IIS中，而不是部署在Tomcat中，其实在IIS中的配置和Tomcat中的配置ArcGIS API几乎没有什么差别，在本篇文章中，主要讲解在IIS中的配置ArcGIS API。
 部署本地环境在IIS主要分为以下几个步骤： 

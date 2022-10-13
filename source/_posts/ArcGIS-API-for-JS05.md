@@ -3,7 +3,7 @@ title: ArcGIS Server之发布GP服务-返回矢量数据
 date: 2019-08-05 16:51:51
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 ### 什么是GP服务
 在WebGIS开发当中，虽然ArcGIS API提供给我们很多的接口，但是现实需求总是千变万化的，很多可能部分需求在我们的API中没有实现，而GP服务就弥补了这一个缺点，我们可以将ArcGIS中的GP工具发布为服务，提供给我们前端调用。

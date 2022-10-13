@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之几何服务
 date: 2019-08-06 17:43:13
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 什么是几何服务（GeometryService）？从字面意义上来说是和几何（Geometry）相关的服务，具体一点讲我们可以用这个类实现一些简单的图形操作。例如：
 

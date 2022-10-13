@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之调用地理编码服务
 date: 2019-08-06 18:03:13
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 地理编码（Geocoding）指建立地理位置坐标与给定地址一致性的过程，简单的说就是将一个地址的描述信息映射为地图上该地址所对应的空间位置。
       根据输入的地址找到对应的空间信息。当输入一个地址的时候，可能会查到好多个空间位置，程序会给每一个位置一个打分，匹配的越完全的比分越高。（注意这里说的）

@@ -3,7 +3,7 @@ title: ArcGIS Server之发布要素服务
 date: 2019-08-05 15:02:49
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 ### 什么是要素服务？
 要素服务可用来通过 Internet 提供要素，并提供显示要素时所要使用的符号系统。之后，客户端可执行查询操作以获取要素，并执行相应的编辑操作。要素服务提供了可用于提高客户端编辑体验的模板。此外，要素服务也可以对关系类和非空间表中的数据进行查询和编辑。

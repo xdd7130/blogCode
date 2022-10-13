@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之查询功能
 date: 2019-08-06 15:26:24
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 在ArcGIS API中查询功能是非常常用的，Esri给我们提供了三个类用于实现矢量数据查询功能。FindTask,QueryTask,IdentifyTask，他们之间的区别为：
 

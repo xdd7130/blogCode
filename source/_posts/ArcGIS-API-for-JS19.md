@@ -3,7 +3,7 @@ title: ArcGIS API For Javacsript编辑客户端图形
 date: 2019-08-06 17:07:56
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 在ArcGIS API当中，提供了一个工具叫做Edit，我们利用Edit可以交互的编辑客户端图形Graphic，这个功能在我们实际开发过程中非常有用，可以交互编辑已经存在的Graphic以达到我们的目的，Edit工具可以从以下方面编辑客户端图形：
 

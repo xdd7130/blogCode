@@ -3,7 +3,7 @@ title: ArcGIS Server之发布网络分析服务
 date: 2019-08-05 17:30:10
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
  ArcGIS中网络分析分为 : 最短路径分析，服务区信息等等,如果想要在Web应用程序中使用网络分析服务，需要将我们的数据发布为网络分析服务
 ### 发布网络分析服务

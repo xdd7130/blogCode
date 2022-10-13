@@ -3,7 +3,7 @@ title: ArcGIS Server之发布影像服务
 date: 2019-08-05 16:25:58
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 在实际开发过程中，为了满足用户不同的需求，Esri制定了各种不同的服务类型，每一种服务类型都有着自己的优点，同时特定的服务类型可以实现特性的功能，此篇博客便说一说影像服务
 ### 什么是影像服务？

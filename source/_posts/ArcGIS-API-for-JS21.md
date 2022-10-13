@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之网络分析
 date: 2019-08-06 17:27:59
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 在WebGIS中网络分析一直是比较常用的功能，比如：路径分析，服务点分析等等,在WebGIS中想要实现相应的功能需要将我们的服务发布为网络服务。
 ### 路径分析

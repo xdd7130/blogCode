@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之渲染实现
 date: 2019-08-06 15:43:25
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 在 GIS当中，总要时不时的制作几张专题图，制作专题图的过程中，不可避免的就要涉及到图层的渲染问题（即改变图层的颜色信息），渲染分为客户端渲染，服务器渲染，客户端渲染要求我们的服务必须是要素服务，或者是可以使用FeatureLayer接收的服务图层
 ### 需求

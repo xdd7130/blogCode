@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript调用GP服务
 date: 2019-08-06 15:59:51
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 ArcGIS API中关于GP服务的调用是比较容易出错的，出错的大部分原因便是Web API调用GP服务的时候参数不对应导致的
 ### ArcGIS API调用GP服务

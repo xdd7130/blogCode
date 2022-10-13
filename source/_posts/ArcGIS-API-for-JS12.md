@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之地图操作及小部件
 date: 2019-08-06 14:22:30
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 开发一个GIS系统不可避免的就要涉及一些简单的地图操作，比如：拉框放大，拉框缩小，平移，全图等相关操作。除了这些基本的地图操作，Esri给我们提供的一些小部件也非常有用，其中几个重要的小部件有：鹰眼，书签，比例尺等等。在此篇博文中，主要介绍地图的基本操作和几个常用的小部件。
 ### 地图的基本操作

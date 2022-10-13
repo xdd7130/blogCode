@@ -3,7 +3,7 @@ title: ArcGIS API For Javascript之影像服务分析
 date: 2019-08-06 18:08:42
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
   在前面我们大多数的程序是对矢量数据的操作，在这篇博客中，主要介绍影响服务的操作。在影像服务的操作中主要用到的类有：
 

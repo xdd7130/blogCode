@@ -4,7 +4,7 @@ title: ArcGIS Server之发布切片地图服务
 date: 2019-08-05 10:17:48
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
 
 > 参考：[https://github.com/CarpenterGISer/ArcGIS-API-For-Javacsript](https://github.com/CarpenterGISer/ArcGIS-API-For-Javacsript)

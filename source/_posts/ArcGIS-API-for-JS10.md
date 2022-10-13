@@ -3,7 +3,7 @@ title: ArcGIS API For JavaScript之添加地图
 date: 2019-08-05 18:35:33
 categories:
 - ArcGIS
-tags: [ArcGIS API for JS]
+tags: [ArcGIS API for JS, webgis]
 ---
  在ArcGIS API For JS中，esri.Map类可以说是最重要的一个类，Map作为地图图层的容器，存放各种地图服务，同时Map具有一些常用的属性和事件可以帮助我们完成一些复杂的操作。接下来我们使用Map类开始我们的HelloWorld程序。
 ### 步骤
