@@ -83,3 +83,12 @@ deploy:
   repository: git@github.com:xdd7130/xdd7130.github.io.git
   branch: master
 
+
+jsonContent:
+  ignore:
+    - path/to/a/page
+    - url/to/one/post
+    - an-entire-category
+    - specific.file
+    - .ext # a file extension
+
