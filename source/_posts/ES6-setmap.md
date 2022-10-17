@@ -2,7 +2,7 @@
 title: ES6(二) Set和Map
 date: 2020-11-23 19:18:34
 categories:
-- 基础前端技术
+- Web前端
 tags: 
     - ES6
 ---

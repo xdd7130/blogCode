@@ -2,7 +2,7 @@
 title: ES6(四) Iterator
 date: 2021-01-05 09:52:51
 categories:
-- 基础前端技术
+- Web前端
 tags: 
     - ES6
 ---

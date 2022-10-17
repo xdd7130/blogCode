@@ -1,8 +1,8 @@
 ---
-title: linux部署yapi
+title: linux部署nginx
 date: 2022-09-14 20:22:12
 categories:
-- 笔记
+- nginx
 tags: 
     - [nginx, linux]
 ---

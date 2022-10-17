@@ -2,7 +2,7 @@
 title: ES6(一)
 date: 2020-10-25 19:18:34
 categories:
-- 基础前端技术
+- Web前端
 tags: 
     - ES6
 ---
