@@ -1,7 +1,7 @@
 ---
 title: ES6(三) Promise
 date: 2021-01-05 10:25:07
-categories: "基础前端技术"
+categories: "Web前端"
 tags: [Promise,ES6]
 ---
 

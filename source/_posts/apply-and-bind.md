@@ -2,7 +2,7 @@
 title: apply and bind
 date: 2019-08-11 10:36:27
 categories: 
-- 基础前端技术
+- Web前端
 tags: [js]
 ---
 本篇主要解决一下几个问题：

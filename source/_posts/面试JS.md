@@ -1,7 +1,7 @@
 ---
 title: 面试JS
 date: 2019-01-03 21:42:31
-categories: "基础前端技术"
+categories: "Web前端"
 tags: [JS]
 ---
 # 介绍一下JS的数据类型？

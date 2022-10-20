@@ -2,7 +2,7 @@
 title: ES6(五) Generator
 date: 2021-01-06 09:13:36
 categories:
-- 基础前端技术
+- Web前端
 tags: 
     - ES6
 ---

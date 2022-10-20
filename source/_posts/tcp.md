@@ -2,7 +2,7 @@
 title: tcp
 date: 2019-02-15 09:40:54
 categories:
-- 基础前端技术
+- Web前端
 tags: [tcp]
 ---
 > 参考：[https://juejin.im/post/5a7ef7ce5188257a856f38b0](https://juejin.im/post/5a7ef7ce5188257a856f38b0)

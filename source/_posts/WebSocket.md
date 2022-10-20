@@ -2,7 +2,7 @@
 title: WebSocket
 date: 2019-08-07 20:42:20
 categories:
-- 基础前端技术
+- Web前端
 tags: [WebSocket]
 ---
 ### WebSocket

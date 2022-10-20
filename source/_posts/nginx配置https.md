@@ -58,10 +58,10 @@ Tomcat、Weblogic、JBoss等，使用Java提供的密码库。通过Java的Keyto
 Apache、Nginx等，使用OpenSSL提供的密码库，生成PEM、KEY、CRT等格式的证书文件。
 此外，IBM的产品，如Websphere、IBM Http Server（IHS）等，使用IBM产品自带的iKeyman工具，生成KDB格式的证书文件。微软Windows Server中的Internet Information Services（IIS），使用Windows自带的证书库生成PFX格式的证书文件。
 
->>> X.509#DER 二进制格式证书，常用后缀.cer .crt
->>> X.509#PEM 文本格式证书，常用后缀.pem
->>> 有的证书内容是只包含公钥（服务器的公钥），如.crt、.cer、.pem
->>> 有的证书既包含公钥又包含私钥（服务器的私钥），如.pfx、.p12
+> X.509#DER 二进制格式证书，常用后缀.cer .crt
+> X.509#PEM 文本格式证书，常用后缀.pem
+> 有的证书内容是只包含公钥（服务器的公钥），如.crt、.cer、.pem
+> 有的证书既包含公钥又包含私钥（服务器的私钥），如.pfx、.p12
 
 ![01.png](01.png)
 

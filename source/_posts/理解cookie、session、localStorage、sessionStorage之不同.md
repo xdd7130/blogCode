@@ -2,7 +2,7 @@
 title: 理解cookie、session、localStorage、sessionStorage之不同
 date: 2019-01-02 10:03:31
 categories: 
-- 基础前端技术
+- Web前端
 tags: [cookie]
 ---
 
