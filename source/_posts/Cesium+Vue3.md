@@ -1,5 +1,5 @@
 ---
-title: Cesium+Vue3 搭建第一个项目(一)
+title: Cesium+Vue3 搭建第一个项目
 date: 2022-10-20 20:22:12
 categories:
 - Cesium
