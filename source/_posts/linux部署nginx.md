@@ -47,3 +47,11 @@ cat nginx.conf
 ./nginx -v // 查看版本号
 ps -ef | grep nginx 查看nginx进程
 ```
+
+# 其他
+### HTTP 全局跳转 HTTPS 的设置
+代码 497 是 nginx 在遇到 HTTP 请求发到 HTTPS 时会产生的内部错误代码，因此我们将返回一个 307 的回复（307 Temporary Redirect是HTTP协议中的一个状态码（Status Code）。可以理解为一个临时的重定向
+```
+error_page 497 =307 https://$host:$server_port$request_uri;
+
+```
