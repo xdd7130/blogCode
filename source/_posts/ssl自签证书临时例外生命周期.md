@@ -69,7 +69,12 @@ chromium/components/security_interstitials/content/stateful_ssl_host_state_deleg
 Chrome <=81 版本定义文件路径chromium/chrome/browser/ssl/chrome_ssl_host_state_delegate.cc 如:
 https://github.com/chromium/chromium/blob/76.0.3809.146/chrome/browser/ssl/chrome_ssl_host_state_delegate.cc
 
-
+# 自定义
+1. 按 Win + R → 输入 regedit → 回车。
+2. 导航至路径：
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome
+3. 右键新建 → DWORD (32 位)值 → 名称：AllowedCertificateOverrideDuration → 双击设置值：30（十进制）。
+重启 Chrome。
 
 
 
