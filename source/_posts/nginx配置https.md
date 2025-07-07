@@ -4,7 +4,7 @@ date: 2022-10-17 20:22:12
 categories:
 - nginx
 tags: 
-    - [nginx, linux]
+    - [nginx, linux, ssl]
 ---
 ## nginx开启 SSL模块
 Nginx如果未开启SSL模块，配置Https时提示错误：
